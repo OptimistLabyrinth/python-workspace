@@ -2,7 +2,6 @@ from tutorial_in_official_docs import chapter_04_more_control_flow_tools
 from tutorial_in_official_docs import chapter_05_data_structures
 from tutorial_in_official_docs import chapter_08_errors_and_exceptions
 from tutorial_in_official_docs import chapter_09_classes
-from tutorial_in_official_docs import chapter_10_standard_library
 
 def chapter04():
     chapter_04_more_control_flow_tools.else_with_loop()
@@ -29,7 +28,8 @@ def chapter09():
 
 if __name__ == "__main__":
     import platform
-    print('now working on', platform.python_version())
+    import sys
+    print(f'now working on {platform.python_version()} ({sys.executable})')
 
     # chapter04()
     # chapter05()
