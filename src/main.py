@@ -2,6 +2,7 @@ from tutorial_in_official_docs import chapter_04_more_control_flow_tools
 from tutorial_in_official_docs import chapter_05_data_structures
 from tutorial_in_official_docs import chapter_08_errors_and_exceptions
 from tutorial_in_official_docs import chapter_09_classes
+from standard_library import using_userDict
 
 def chapter04():
     chapter_04_more_control_flow_tools.else_with_loop()
@@ -26,6 +27,9 @@ def chapter09():
     chapter_09_classes.section_09_09_generators()
     chapter_09_classes.section_09_10_generator_expressions()
 
+def with_userDict():
+    using_userDict.test_box()
+
 if __name__ == "__main__":
     import platform
     import sys
@@ -34,4 +38,5 @@ if __name__ == "__main__":
     # chapter04()
     # chapter05()
     # chapter08()
-    chapter09()
+    # chapter09()
+    with_userDict()
