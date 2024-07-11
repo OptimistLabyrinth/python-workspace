@@ -1,7 +1,5 @@
-from typing import Self
-
 class Special:
-    def __new__(cls) -> Self:
+    def __new__(cls):
         print('Special.__new__')
         return super().__new__(cls)
 
