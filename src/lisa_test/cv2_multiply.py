@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def multiply_1d_arrays():
     arr = np.array([155, 200, 255])
     roi1 = np.array([0, 0, 0])
@@ -44,6 +45,7 @@ def multiply_1d_arrays():
     #     [  0]
     # ]
     print()
+
 
 def multiply_2d_arrays():
     arr = np.array([
@@ -103,6 +105,19 @@ def multiply_2d_arrays():
     # ]
     print()
 
+
+def multiply_scalar():
+    height = 10
+    width = 8
+    matrix = np.zeros((height, width), np.uint8)
+    matrix = matrix + 1
+    print(matrix)
+    matrix = matrix * 255
+    print(matrix)
+
+
 def run():
-    multiply_1d_arrays()
+    # multiply_1d_arrays()
     # multiply_2d_arrays()
+    multiply_scalar()
+
